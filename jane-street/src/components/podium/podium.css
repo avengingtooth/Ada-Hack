@@ -1,0 +1,54 @@
+#podium{
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.column{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: auto auto 0 auto;
+}
+
+#podium #profile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.stand{
+    width: 100%;
+}
+
+#first .stand{
+    height: 80%;
+    background-color: gold;
+}
+
+#second .stand{
+    height: 50%;
+    background-color: silver;
+}
+
+#third .stand{
+    height: 30%;
+    background-color: brown;
+}
+
+#podium .score{
+    background-color: darkgrey;
+    color: white;
+    padding: 7%;
+    border-radius: 20%;
+}
+
+.score, .column .name{
+    margin: 5% auto 5% auto;
+}

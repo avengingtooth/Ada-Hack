@@ -17,7 +17,6 @@ function Leaderboard(){
                 <UserScorecard name={name} score={score} department={department}/>
                 <UserScorecard name={name} score={score} department={department}/>
                 <UserScorecard name={name} score={score} department={department}/>
-                <UserScorecard name={name} score={score} department={department}/>
             </div>
             <BottomNav/>
         </div>
