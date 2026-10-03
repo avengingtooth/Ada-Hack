@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./recording.css"
 
 function Recording(){
     const [methodTemp, setMethodTemp] = useState("");
@@ -30,10 +31,10 @@ function Recording(){
         <div id="form">
             <h1>How did you get to work today?</h1>
             <form onSubmit={calculate}>
-                <label>Usual Route</label>
-                <br />
-                <label>Select method of transportation:
+                <label id="methodTitle">Select method of transportation:
+                    <br />
                     <select value={methodTemp} onChange={(event) => setMethodTemp(event.target.value)}>
+                        <option value="">--Please choose an option--</option>
                         <option value="walk">Walked</option>
                         <option value="cycle">Cycled</option>
                         <option value="carpool">Carpooling</option>
@@ -44,6 +45,7 @@ function Recording(){
 
                 <br />
                 <label>Enter distance of journey in miles:
+                    <br />
                     <input type="number" 
                     value={lengthTemp} 
                     min="1"
