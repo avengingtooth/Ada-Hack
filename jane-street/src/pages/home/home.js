@@ -9,10 +9,10 @@ const user = {
     "department": "Communications",
     "points": {
         "walking": 50,
-        "cycling": 25,
-        "publicTransportation": 5,
-        "carPooling": 43,
-        "other": 3
+        "other": 20,
+        "cycling": 40,
+        "publicTransportation": 10,
+        "carPooling": 43
     }
 }
 

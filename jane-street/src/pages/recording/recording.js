@@ -1,9 +1,8 @@
 import { useState } from "react";
 import "./recording.css"
 import BottomNav from "../../components/bottomNav/bottomNav";
-import user from "../../user";
 
-function Recording(){
+function Recording({user}){
     const [methodTemp, setMethodTemp] = useState("");
     const [lengthTemp, setlengthTemp] = useState("");
     const [points, setPoints] = useState(null);
@@ -19,14 +18,11 @@ function Recording(){
             calculatedPoints = 0; //not saved/reduced on any emissions
         } else if (method==="walk" || method==="cycle"){
             calculatedPoints = 0.264 * length; //what the emissions would be using car
-            user.points.walking += calculatedPoints
             console.log(user)
         } else if (method === "carpool"){
             calculatedPoints = 0.264 * length / 2 //emissions halved as car journey was shared
-            user.points["carPooling"] += calculatedPoints
         } else if (method ==="public"){ //public transport
 	        calculatedPoints = 0.264 * length * 3/4; //emissions reduced by 3/4
-            user.points["publicTransportation"] += calculatedPoints
         }
 
         setPoints(calculatedPoints);

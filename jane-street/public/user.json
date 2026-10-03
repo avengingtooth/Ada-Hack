@@ -1,0 +1,13 @@
+[
+    {
+        "name": "Jane Doe",
+        "department": "Communications",
+        "points": {
+            "walking": 50,
+            "cycling": 25,
+            "publicTransportation": 5,
+            "carPooling": 43,
+            "other": 3
+        }
+    }
+]
