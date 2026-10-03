@@ -1,8 +1,9 @@
+import "./addTravel.css"
 import Button from '@mui/material/Button';
 
 function AddTravel(){
     return(
-        <Button href="record" variant="outlined">START NEW JOURNEY</Button>
+        <Button id="travelButton" href="record" variant="outlined">START NEW JOURNEY</Button>
     )
 }
 

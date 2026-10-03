@@ -4,11 +4,23 @@ import AddTravel from "../../components/addTravel/addTravel"
 import Profile from "../../components/profile/profile"
 import DonutChart from "../../components/donutChart/donutChart"
 
+const user = {
+    "name": "Jane Doe",
+    "department": "Communications",
+    "points": {
+        "walking": 50,
+        "cycling": 25,
+        "publicTransportation": 5,
+        "carPooling": 43,
+        "other": 3
+    }
+}
+
 function Home(){
     return (
         <div id="homePage">
-            <Profile greeting={true}/>
-            <DonutChart />
+            <Profile greeting={true} name={user.name}/>
+            <DonutChart points={user.points}/>
             <AddTravel />
             <BottomNav curPage="home"></BottomNav>
         </div>

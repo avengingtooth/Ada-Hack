@@ -1,1 +1,10 @@
 
+#travelButton{
+    width: 80%;
+    margin: auto;
+    border-radius: 25px;
+    background-color: #307808;
+    color: white;
+    font-size: larger;
+    font-weight: bold
+}

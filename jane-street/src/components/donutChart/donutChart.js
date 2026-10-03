@@ -3,20 +3,15 @@ import { PieChart } from '@mui/x-charts/PieChart';
 import { useDrawingArea } from '@mui/x-charts/hooks';
 import { styled } from '@mui/material';
 
-const data = [
-  { label: 'Walking', value: 400, color: '#0088FE' },
-  { label: 'Cycling', value: 300, color: '#00C49F' },
-  { label: 'Car Pooling', value: 300, color: '#FFBB28' },
-  { label: 'Public Transportation', value: 200, color: '#FF8042' },
-];
-
 const StyledText = styled('text')(() => ({
   fill: "black",
   textAnchor: 'middle',
   dominantBaseline: 'central',
+  // backgroundColor: "white",
   width: 70,
   textWrap: "wrap",
   fontSize: 20,
+  fontWeight: 600,
 }));
 
 function PieCenterLabel(){
@@ -28,7 +23,14 @@ function PieCenterLabel(){
   );
 }
 
-function DonutChart(){
+function DonutChart({points}){
+    const data = [
+      { label: 'Walking', value: points.walking, color: '#A1D99B' },
+      { label: 'Cycling', value: points.cycling, color: '#41AB5D' },
+      { label: 'Car Pooling', value: points.carPooling, color: '#238B45' },
+      { label: 'Public Transportation', value: points.publicTransportation, color: '#00441B' },
+      { label: 'Other', value: points.other, color: '#6A953F' }
+    ];
     return(
         <div id="chart">
             <h2>Carbon Emissions Prevented</h2>
