@@ -33,7 +33,7 @@ function Recording(){
             <form onSubmit={calculate}>
                 <label id="methodTitle">Select method of transportation:
                     <br />
-                    <select value={methodTemp} onChange={(event) => setMethodTemp(event.target.value)}>
+                    <select id="methodSelect" value={methodTemp} onChange={(event) => setMethodTemp(event.target.value)}>
                         <option value="">--Please choose an option--</option>
                         <option value="walk">Walked</option>
                         <option value="cycle">Cycled</option>
@@ -44,6 +44,7 @@ function Recording(){
                 </label>
 
                 <br />
+                <br />
                 <label>Enter distance of journey in miles:
                     <br />
                     <input type="number" 
@@ -53,13 +54,16 @@ function Recording(){
                 </label>
 
                 <br />
-                <button type="submit">Submit</button>
+                <br />
+                <button id="button" type="submit">Submit</button>
             </form>
 
             {points !== null && (
                 <p>Your points for today: {points}</p>
             )}
         </div>
+
+        
     );
 }
 
