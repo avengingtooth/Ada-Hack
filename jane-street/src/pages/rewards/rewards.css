@@ -1,0 +1,16 @@
+#rewardsPage{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+#pointInfo{
+    width: 80%;
+    border: gray, 1px, solid;
+    border-radius: 7%;
+    padding: 2%;
+    box-shadow: 5px 5px gray;
+}

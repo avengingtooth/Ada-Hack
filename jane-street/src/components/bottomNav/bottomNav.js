@@ -9,7 +9,7 @@ function BottomNav(curPage){
     const pages = [
         [<HomeIcon/>, "/", "home"], 
         [<LeaderboardIcon/>, "/leaderboard", "leaderboard"],
-        [<RedeemIcon/>, "/reward", "reward"],
+        [<RedeemIcon/>, "/rewards", "rewards"],
         [<Profile/>, "/", "profile"]
     ]
     return(
