@@ -6,10 +6,13 @@
     font-size: 12pt;
 }
 
-#button {
+#methodSelect{
+    font-size: 12pt;
+}
+
+#button{
     background-color: #307808;
     color: white;
     font-size: 18pt;
     border-radius: 12px;
 }
-

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./recording.css"
+import BottomNav from "../../components/bottomNav/bottomNav";
 
 function Recording(){
     const [methodTemp, setMethodTemp] = useState("");
@@ -61,6 +62,7 @@ function Recording(){
             {points !== null && (
                 <p>Your points for today: {points}</p>
             )}
+            <BottomNav/>
         </div>
 
         

@@ -29,7 +29,7 @@
 
 #first .stand{
     height: 80%;
-    background-color: gold;
+    background-color: #E59E22;
 }
 
 #second .stand{
@@ -43,7 +43,7 @@
 }
 
 #podium .score{
-    background-color: darkgrey;
+    background-color: #2f780893;
     color: white;
     padding: 7%;
     border-radius: 20%;

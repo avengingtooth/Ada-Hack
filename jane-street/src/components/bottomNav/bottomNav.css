@@ -1,8 +1,5 @@
 #bottomNav{
     width: 100%;
-    /* display: flex; */
-    /* justify-content: space-around; */
-    /* align-items: center; */
     display: grid;
     grid-template-columns: auto auto auto auto;
     position: fixed;
@@ -14,7 +11,7 @@
 }
 
 #bottomNav a{
-    color: purple;
+    color: #307808;
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;

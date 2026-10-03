@@ -1,17 +1,18 @@
 .rewardBoxes{
     width: 80%;
-    border: gray, 1px, solid;
     border-radius: 25px;
     padding: 2%;
-    box-shadow: 5px 5px gray;
-    background-color: beige;
+    box-shadow: 5px 5px #276804ce;
+    background-color: #2f780893;
     margin-bottom: 5%;
 }
 
 .rewardBoxes Button{
     background-color: white;
+    color: rgb(11, 11, 186);
+    font-weight: bold;
     border-radius: 25px;
-    border: gray, 1px, solid;
+    border: #276804ce, 1px, solid;
     display: flex;
     margin-left: auto;
     margin-right: 0;
